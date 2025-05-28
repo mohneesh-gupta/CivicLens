@@ -1,32 +1,39 @@
-# My Website
+# Macky Teck
 
-A brief description of what your website does and its main features.
-
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+Welcome to the Macky Teck project!
 
 ## Overview
 
-This website allows users to:
-- Report issues by navigating to `report.html`.
-- View maps and other content.
-- Interact with smooth scrolling and dynamic elements.
+Macky Teck is a software project aimed at delivering innovative technology solutions. This repository contains the source code, documentation, and resources for the project.
 
 ## Features
 
-- **Interactive Buttons:** Stylish buttons with hover effects and actions.
-- **Smooth Scrolling:** Clickable text to smoothly scroll to the top.
-- **Responsive Design:** Works on various screen sizes.
+- Modern and scalable architecture
+- Easy to use and extend
+- Well-documented codebase
 
-## Installation
+## Getting Started
 
-To get started, clone the repository:
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/mohneesh-gupta/CivicLens.git
+    ```
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the application:
+    ```bash
+    npm start
+    ```
 
-```bash
-git clone https://github.com/yourusername/your-repo.git
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+Made by Mohneesh Gupta
+email - work.mohneesh@gmail.com
