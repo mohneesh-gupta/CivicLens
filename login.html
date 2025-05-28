@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/login.css">
+    <title>modern login page</title>
+</head>
+<body>
+
+    <!-- Nanbar -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="scroll-behavior: smooth;">
+          <i class="fas fa-hands-helping logo-icon" style="transition: transform 0.3s;"></i>
+          <span style="cursor: pointer; transition: color 0.3s;">CivicLens</span>
+        </a>
+        <style>
+          .logo:hover .logo-icon {
+            transform: scale(1.15) rotate(-10deg);
+          }
+          .logo:hover span {
+            color: #38b6ff;
+          }
+        </style>
+        
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" style="cursor: pointer;" class="active">Home</a></li>
+                <li><a href="#issues">Issues</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="report.html">Report</a></li>
+            </ul>
+            
+            <div class="account-dropdown">
+                <button class="account-btn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Account</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-user"></i> Your Profile</a>
+                    <a href="#"><i class="fas fa-edit"></i> Edit Profile</a>
+                    <a href="#" onclick="window.location.href='login.html'; return false;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+<div class="container" id="container">
+    <div class="form-container sign-up">
+        <form method="post" action="/api/register">
+            <h1>Create Account</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <span>or use your email for registration</span>
+            <input type="text" name="name" placeholder="Name">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="password">
+            <button type="button" onclick="window.location.href='index.html'">Sign Up</button>
+        </form>
+    </div>
+    <div class="form-container sign-in">
+        <form method="post" action="/api/login">
+            <h1>Sign In</h1>
+            <div class="social-icons">
+                <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <span>or use your email password</span>
+           
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="password">
+            <a href="#">Forgot Your Password?</a>
+            <button type="button" onclick="window.location.href='index.html'">Sign In</button>
+        </form>
+    </div>
+    
+    <div class="toggle-container">
+        <div class="toggle">
+            <div class="toggle-panel toggle-left">
+                <h1>Welcome Back!</h1>
+                <p>Enter your all personal details to use all of site features</p>
+                <button class="hidden" id="login">Sign In</button>
+            </div>
+            <div class="toggle-panel toggle-right">
+                <h1>Hello Friend!</h1>
+                <p>Register with your personal details to use all of site features</p>
+                <button class="hidden" id="register">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <script src="/login.js"></script>
+    
+</body>
+</html>

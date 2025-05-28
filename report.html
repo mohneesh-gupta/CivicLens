@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicLens | Community Reporting Portal</title>
+    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Particle Background -->
+    <div id="particles-js"></div>
+
+    <!-- Nanbar -->
+
+    <nav class="navbar">
+        <a href="index.html" class="logo" style="scroll-behavior: smooth;">
+          <i class="fas fa-hands-helping logo-icon" style="transition: transform 0.3s;"></i>
+          <span style="cursor: pointer; transition: color 0.3s;">CivicLens</span>
+        </a>
+        <style>
+          .logo:hover .logo-icon {
+            transform: scale(1.15) rotate(-10deg);
+          }
+          .logo:hover span {
+            color: #38b6ff;
+          }
+        </style>
+        </a>
+        
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#issues">Issues</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#map">Map</a></li>
+                <li><a href="report.html" class="active">Report</a></li>
+            </ul>
+            
+            <div class="account-dropdown">
+                <button class="account-btn">
+                    <i class="fas fa-user-circle"></i>
+                    <span>Account</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#"><i class="fas fa-user"></i> Your Profile</a>
+                    <a href="#"><i class="fas fa-edit"></i> Edit Profile</a>
+                    <a href="#" onclick="window.location.href='login.html'; return false;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Report Section -->
+  <section id="report" class="report-section">
+    <div class="report-container">
+      <h2>Report a Community Issue</h2>
+      <form>
+        <div class="form-group">
+          <label for="issue-type">Issue Type</label>
+          <select id="issue-type" class="form-control" required>
+            <option value="">Select issue category</option>
+            <option value="road">Road & Sidewalk</option>
+            <option value="sanitation">Sanitation & Waste</option>
+            <option value="parks">Parks & Recreation</option>
+            <option value="safety">Public Safety</option>
+            <option value="utilities">Utilities</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="title">Title</label>
+          <input type="text" id="title" class="form-control" placeholder="Brief description of the issue" required />
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" class="form-control" placeholder="Street address or landmark" required />
+        </div>
+
+        <!-- Location Selection on Map -->
+        <div class="form-group">
+          <label>Pin Location on Map (Optional)</label>
+          <div class="map-choose-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.215209179873!2d-73.98784492453713!3d40.74844097138952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1690834253572!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy"
+            ></iframe>
+            <p class="small">Drag or click on the map to choose the exact location.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Upload Photos (Optional)</label>
+          <div class="file-upload">
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Click to upload or drag and drop</p>
+            <p class="small">Maximum 5 photos (5MB each)</p>
+            <input type="file" id="file-upload" multiple accept="image/*" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="details">Details</label>
+          <textarea id="details" class="form-control" placeholder="Please describe the issue in detail..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary submit-btn animated-btn">
+          <i class="fas fa-paper-plane"></i> Submit Report
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-column">
+                <h3>CivicLens</h3>
+                <p style="color: #cbd5e1; margin-bottom: 1.5rem;">Empowering communities through collaboration and transparency.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#report">Report an Issue</a></li>
+                    <li><a href="#map">Community Map</a></li>
+                    <li><a href="#issues">Recent Issues</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul class="footer-links">
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Community Guidelines</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <div class="footer-contact">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>123 Civic Center Dr, Suite 200<br>Your City, ST 12345</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>(555) 123-4567</span>
+                </div>
+                <div class="footer-contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>support@civiclens.org</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 CivicLens. All rights reserved.</p>
+            <p>Designed with ❤️ for better communities</p>
+        </div>
+    </footer>
+  
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="new.js"></script>
+</body>
+</html>
