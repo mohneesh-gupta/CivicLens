@@ -1,14 +1,15 @@
-# Macky Teck
+# CivicLens
 
-Welcome to the Macky Teck project!
+Welcome to the CivicLens project!
 
 ## Overview
 
-Macky Teck is a software project aimed at delivering innovative technology solutions. This repository contains the source code, documentation, and resources for the project.
+CivicLens is a platform, where you can report your local social issues anywhere, anytime. This repository contains the source code, documentation, and resources for the project.
 
 ## Features
 
 - Modern and scalable architecture
+- Global Need
 - Easy to use and extend
 - Well-documented codebase
 
@@ -33,7 +34,7 @@ Contributions are welcome! Please open issues or submit pull requests for improv
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under team MYTH busters.
 
-Made by Mohneesh Gupta
-email - work.mohneesh@gmail.com
+-Made by Mohneesh Gupta
+-email - work.mohneesh@gmail.com
