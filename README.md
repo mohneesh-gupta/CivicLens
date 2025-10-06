@@ -1,47 +1,58 @@
-# CivicLens
+# 🌍 CivicLens
 
-Welcome to the CivicLens project!
+> Empowering communities to report, track, and resolve local issues — anytime, anywhere.
 
-## Overview
+![CivicLens Banner](https://img.shields.io/badge/Project-CivicLens-blueviolet?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
+![License](https://img.shields.io/badge/License-Team%20MYTH%20Busters-yellow?style=for-the-badge)
 
-CivicLens is a platform, where you can report your local social issues anywhere, anytime. This repository contains the source code, documentation, and resources for the project.
+---
 
-## Features
+## 📖 Overview
 
-- Modern and scalable architecture
-- Global Need
-- Easy to use and extend
-- Well-documented codebase
+**CivicLens** is a community-driven platform designed to make civic participation more transparent and impactful.  
+It allows citizens to **report local issues**, **raise awareness**, and **connect with responsible authorities** — all in one place.
 
-<img width="1920" height="1080" alt="Screenshot 2025-06-07 150554" src="https://github.com/user-attachments/assets/6973933f-a2e2-4c79-808d-6935681b4ee9" />
-<img width="1920" height="1080" alt="Screenshot 2025-06-07 150610" src="https://github.com/user-attachments/assets/e45b0893-9d92-4481-8440-d90373bb500c" />
-<img width="1920" height="1080" alt="Screenshot 2025-06-07 150622" src="https://github.com/user-attachments/assets/46052b65-81bd-42f9-9057-9478cbded5d5" />
+Our mission is to create a digital bridge between citizens and local governance, enabling a more responsive and accountable society.
 
+---
 
+## ✨ Key Features
 
+- 🏙️ **Report Issues Instantly:** Capture and report problems (roads, waste, lighting, etc.) from your location.  
+- 🌐 **Global Accessibility:** Report issues from anywhere, anytime.  
+- 🧭 **Interactive Dashboard:** Track reported issues and monitor their resolution status.  
+- ⚙️ **Scalable Architecture:** Built for performance and future expansion.  
+- 🧩 **User-Friendly Interface:** Simple, modern, and intuitive design.  
+- 📘 **Well-Documented:** Clean codebase and clear documentation for developers.
 
-## Getting Started
+---
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/mohneesh-gupta/CivicLens.git
-    ```
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
-3. Start the application:
-    ```bash
-    npm start
-    ```
+## 🖼️ Screenshots
 
-## Contributing
+| Home Page | Issue Report Page | Dashboard |
+|------------|------------------|------------|
+| ![Home](https://github.com/user-attachments/assets/6973933f-a2e2-4c79-808d-6935681b4ee9) | ![Report](https://github.com/user-attachments/assets/e45b0893-9d92-4481-8440-d90373bb500c) | ![Dashboard](https://github.com/user-attachments/assets/46052b65-81bd-42f9-9057-9478cbded5d5) |
 
-Contributions are welcome! Please open issues or submit pull requests for improvements.
+---
 
-## License
+## 🧰 Tech Stack
 
-This project is licensed under team MYTH busters.
+| Layer | Technologies |
+|-------|---------------|
+| **Frontend** | HTML, CSS, JavaScript (React / EJS) |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB |
+| **API Integration** | Google Maps API (for geolocation) |
+| **Hosting** | Render / Vercel / MongoDB Atlas |
 
--Made by Mohneesh Gupta
--email - work.mohneesh@gmail.com
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up **CivicLens** locally:
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/mohneesh-gupta/CivicLens.git
+cd CivicLens
